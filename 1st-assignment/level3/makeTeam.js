@@ -1,4 +1,3 @@
-const { forEach, push } = require("../../3rd-seminar/crud/dbMockUp/user.js");
 const members = require("./members.js");
 
 let YB = members.filter((member) => member.group === "YB");
