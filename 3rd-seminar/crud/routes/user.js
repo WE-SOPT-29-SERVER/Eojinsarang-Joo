@@ -3,7 +3,7 @@ const router = express.Router();
 const util = require("../lib/util");
 const responseMessage = require("../constants/responseMessage");
 const statusCode = require("../constants/statusCode");
-const users = require("./../dbMockUp/user");
+const users = require("../dbMockUp/user");
 
 router.post("/signup", async (req, res) => {
     // destructuring assignment 비구조화 할당
