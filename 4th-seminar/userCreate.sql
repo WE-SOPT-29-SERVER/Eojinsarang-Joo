@@ -9,5 +9,5 @@ create table "user"
 	phone varchar(15),
 	created_at timestamp default now(),
 	updated_at timestamp default now(),
-	"is_deleted()" boolean default false
+	is_deleted boolean default false
 );
