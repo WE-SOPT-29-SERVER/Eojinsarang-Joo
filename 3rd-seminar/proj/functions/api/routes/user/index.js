@@ -2,11 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 router.post("/signup", require("./userSignupPOST"));
-// router.get('/list', require('./userListGET'));
-
-// router.get('/:userId', require('./userGET'));
-// router.put('/:userId', require('./userPUT'));
-// router.delete('/:userId', require('./userDELETE'));
+router.post("/login", require("./userLoginPOST"));
+router.get("/profile/:id", require("./profileGET"));
+router.put("/:id", require("./userPUT"));
+router.delete("/:id", require("./userDELETE"));
 
 
 module.exports = router;
